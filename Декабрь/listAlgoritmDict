@@ -1,0 +1,13 @@
+print('Hello, world!')
+s = input()
+ans_count = 0
+dct = {}
+
+for elem in s:
+  if elem not in dct:
+    dct[elem] = 0
+  dct[elem] += 1
+for key in dct:
+      if dct[key] > ans_count:
+        ans_count = dct[key]
+print(ans_count)
